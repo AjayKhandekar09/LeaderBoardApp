@@ -38,6 +38,9 @@ const LeaderBoardTable = () => {
     }
   
     return (
+
+
+        
       <div className='flex justify-center'>
           <table className='table-fixed border border-slate-600 '>
               <thead>
@@ -51,46 +54,18 @@ const LeaderBoardTable = () => {
                   </tr>
               </thead>
               <tbody>
-                  <tr>
-                      <td className="border border-slate-600 bg-neaveyBlue h-10">
-                         {students[0].name}
-                      </td>
-                      <td className="bg-neaveyBlue">
-                          {students[0].score}
-                      </td>
-                  </tr>
-                  <tr>
-                      <td className="border border-slate-600 bg-neaveyBlue h-10">
-                          {students[1].name}
-                      </td>
-                      <td className="bg-neaveyBlue border border-slate-600 ">
-                          {students[1].score}
-                      </td>
-                  </tr>
-                  <tr>
-                      <td className="border border-slate-600 bg-neaveyBlue h-10">
-                      {students[2].name}
-                      </td>
-                      <td className="bg-neaveyBlue border border-slate-600 ">
-                          {students[2].score}
-                      </td>
-                  </tr>
-                  <tr>
-                      <td className="border border-slate-600 bg-neaveyBlue h-10">
-                      {students[3].name}
-                      </td>
-                      <td className="bg-neaveyBlue border border-slate-600 ">
-                          {students[3].score}
-                      </td>
-                  </tr>
-                  <tr>
-                      <td className="border border-slate-600 bg-neaveyBlue h-10">
-                      {students[4].name}
-                      </td>
-                      <td className="bg-neaveyBlue border border-slate-600 ">
-                          {students[4].score}
-                      </td>
-                  </tr>
+              {
+                    students.map((Element)=>{
+                        // console.log("entered");
+                       return( <tr>
+                            <td className="border border-slate-600 bg-neaveyBlue h-10">
+                                {Element.name}
+                            </td>
+                            <td className="bg-neaveyBlue border border-slate-600 ">
+                                {Element.score}
+                            </td>
+                        </tr>)
+                    })}
               </tbody>
           </table>
       </div>
