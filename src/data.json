@@ -1,0 +1,12 @@
+ {
+    "students" : [
+          { "name": "John Doe", "score": 98 },
+      
+          { "name": "Jane Smith", "score": 80 },
+      
+          { "name": "Bob Johnson", "score": 96 },
+      
+          { "name": "Alice Williams", "score": 35 },
+      
+          { "name": "Charlie Brown", "score": 90 }
+  ]}
